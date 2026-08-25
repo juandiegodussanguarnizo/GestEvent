@@ -1,0 +1,30 @@
+Historia de Usuario     
+Como administrador                                                                                   
+HU-001: iniciar sesión en el sistema para acceder únicamente con credenciales autorizadas.                     
+HU-002: registrar nuevos usuarios para controlar quién puede utilizar el sistema.                              
+HU-003: registrar organizadores de eventos para asignarles eventos específicos.   
+HU-004: registrar lugares (Venue) para disponer de espacios donde realizar los eventos.                        
+HU-005: consultar todos los eventos registrados para supervisar la programación.
+HU-006: generar reportes de eventos y participantes para facilitar la toma de decisiones.  
+HU-007: buscar eventos por nombre o fecha para encontrarlos rápidamente.
+HU-008: eliminar participantes registrados cuando sea necesario para mantener la información actualizada.      
+
+Como organizador de eventos                             
+HU-009: crear un evento indicando nombre, fecha, hora, lugar y capacidad para planificar actividades.
+HU-010: modificar la información de un evento para mantenerla actualizada.                                       
+HU-011: cancelar o eliminar un evento para evitar que continúe disponible.
+HU-012: asignar un lugar disponible a un evento para evitar conflictos de programación.          
+HU-013: consultar la lista de participantes para conocer quiénes asistirán al evento.                            
+HU-014: conocer la cantidad de inscritos en cada evento para controlar la ocupación. 
+              
+Como asistente 
+HU-015 registrarme en un evento para reservar un cupo o comprar un cupo.
+HU-016 cancelar mi inscripción para liberar el cupo cuando no pueda asistir.                                   | 
+HU-017 consultar los eventos disponibles para decidir a cuáles asistir
+
+Como sistema
+
+HU-018: impedir que un evento supere su capacidad máxima para garantizar un control adecuado del aforo.
+HU-019: verificar que un lugar no tenga dos eventos en la misma fecha y hora para evitar conflictos de programación. 
+HU-020: recibir una confirmación de mi inscripción para tener evidencia de mi registro.                         
+
