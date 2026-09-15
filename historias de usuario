@@ -1,30 +1,1528 @@
-Historia de Usuario     
-Como administrador                                                                                   
-HU-001: iniciar sesión en el sistema para acceder únicamente con credenciales autorizadas.                     
-HU-002: registrar nuevos usuarios para controlar quién puede utilizar el sistema.                              
-HU-003: registrar organizadores de eventos para asignarles eventos específicos.   
-HU-004: registrar lugares (Venue) para disponer de espacios donde realizar los eventos.                        
-HU-005: consultar todos los eventos registrados para supervisar la programación.
-HU-006: generar reportes de eventos y participantes para facilitar la toma de decisiones.  
-HU-007: buscar eventos por nombre o fecha para encontrarlos rápidamente.
-HU-008: eliminar participantes registrados cuando sea necesario para mantener la información actualizada.      
+FASE 2 --- REQUERIMIENTOS DEL SISTEMA
 
-Como organizador de eventos                             
-HU-009: crear un evento indicando nombre, fecha, hora, lugar y capacidad para planificar actividades.
-HU-010: modificar la información de un evento para mantenerla actualizada.                                       
-HU-011: cancelar o eliminar un evento para evitar que continúe disponible.
-HU-012: asignar un lugar disponible a un evento para evitar conflictos de programación.          
-HU-013: consultar la lista de participantes para conocer quiénes asistirán al evento.                            
-HU-014: conocer la cantidad de inscritos en cada evento para controlar la ocupación. 
-              
-Como asistente 
-HU-015 registrarme en un evento para reservar un cupo o comprar un cupo.
-HU-016 cancelar mi inscripción para liberar el cupo cuando no pueda asistir.                                   | 
-HU-017 consultar los eventos disponibles para decidir a cuáles asistir
+Proyecto: GestEvent -- Sistema de Gestión de Eventos
 
-Como sistema
+1. Requerimientos funcionales
 
-HU-018: impedir que un evento supere su capacidad máxima para garantizar un control adecuado del aforo.
-HU-019: verificar que un lugar no tenga dos eventos en la misma fecha y hora para evitar conflictos de programación. 
-HU-020: recibir una confirmación de mi inscripción para tener evidencia de mi registro.                         
+Los requerimientos funcionales describen las funciones y servicios que
+el sistema debe proporcionar a sus usuarios.
 
+--
+
+Código
+
+--
+
+Requerimiento
+
+funcional
+
+--
+
+Descripción
+
+--
+
+Historia relacionada
+
+--
+
+RF-001
+
+--
+
+Inicio   de sesión
+
+--
+
+El   sistema debe permitir al administrador iniciar sesión mediante
+credenciales   autorizadas.
+
+--
+
+HU-001
+
+--
+
+RF-002
+
+--
+
+Registro   de usuarios
+
+--
+
+El   sistema debe permitir al administrador registrar nuevos usuarios.
+
+--
+
+HU-002
+
+--
+
+RF-003
+
+--
+
+Registro   de organizadores
+
+--
+
+El   sistema debe permitir al administrador registrar organizadores de
+eventos.
+
+--
+
+HU-003
+
+--
+
+RF-004
+
+--
+
+Registro   de lugares
+
+--
+
+El   sistema debe permitir al administrador registrar los lugares
+disponibles para   realizar eventos.
+
+--
+
+HU-004
+
+--
+
+RF-005
+
+--
+
+Consulta   de eventos
+
+--
+
+El   sistema debe permitir al administrador consultar los eventos
+registrados.
+
+--
+
+HU-005
+
+--
+
+RF-006
+
+--
+
+Generación   de reportes
+
+--
+
+El   sistema debe permitir al administrador generar reportes
+relacionados con   eventos y participantes.
+
+--
+
+HU-006
+
+--
+
+RF-007
+
+--
+
+Búsqueda   de eventos
+
+--
+
+El   sistema debe permitir buscar eventos por nombre o fecha.
+
+--
+
+HU-007
+
+--
+
+RF-008
+
+--
+
+Gestión   de inscripciones
+
+--
+
+El   sistema debe permitir al administrador eliminar la inscripción de
+un   participante cuando sea necesario.
+
+--
+
+HU-008
+
+--
+
+RF-009
+
+--
+
+Creación   de eventos
+
+--
+
+El   sistema debe permitir al organizador crear eventos indicando
+nombre, fecha,   hora, lugar y capacidad.
+
+--
+
+HU-009
+
+--
+
+RF-010
+
+--
+
+Modificación   de eventos
+
+--
+
+El   sistema debe permitir al organizador modificar la información de
+los eventos   registrados.
+
+--
+
+HU-010
+
+--
+
+RF-011
+
+--
+
+Cancelación   de eventos
+
+--
+
+El   sistema debe permitir al organizador cancelar un evento para evitar
+nuevas   inscripciones.
+
+--
+
+HU-011
+
+--
+
+RF-012
+
+--
+
+Asignación   de lugares
+
+--
+
+El   sistema debe permitir al organizador asignar un lugar disponible a
+un evento.
+
+--
+
+HU-012
+
+--
+
+RF-013
+
+--
+
+Consulta   de participantes
+
+--
+
+El   sistema debe permitir al organizador consultar la lista de
+participantes   inscritos en un evento.
+
+--
+
+HU-013
+
+--
+
+RF-014
+
+--
+
+Consulta   de inscritos
+
+--
+
+El   sistema debe permitir al organizador consultar la cantidad de
+inscritos en   cada evento.
+
+--
+
+HU-014
+
+--
+
+RF-015
+
+--
+
+Inscripción   a eventos
+
+--
+
+El   sistema debe permitir al asistente registrarse en un evento cuando
+existan   cupos disponibles.
+
+--
+
+HU-015
+
+--
+
+RF-016
+
+--
+
+Cancelación   de inscripción
+
+--
+
+El   sistema debe permitir al asistente cancelar su inscripción en un
+evento.
+
+--
+
+HU-016
+
+--
+
+RF-017
+
+--
+
+Consulta   de eventos disponibles
+
+--
+
+El   sistema debe permitir al asistente consultar los eventos
+disponibles.
+
+--
+
+HU-017
+
+--
+
+RF-018
+
+--
+
+Confirmación   de inscripción
+
+--
+
+El   sistema debe generar una confirmación cuando la inscripción de un
+asistente   sea realizada correctamente.
+
+--
+
+HU-020
+
+2. Requerimientos no funcionales
+
+Los requerimientos no funcionales describen las características de
+calidad, restricciones técnicas y condiciones bajo las cuales debe
+funcionar el sistema.
+
+--
+
+Código
+
+--
+
+Requerimiento no funcional
+
+--
+
+Descripción
+
+--
+
+RNF-001
+
+--
+
+Usabilidad
+
+--
+
+El   sistema debe presentar una interfaz clara y comprensible para
+administradores, organizadores y asistentes.
+
+--
+
+RNF-002
+
+--
+
+Seguridad
+
+--
+
+El   acceso a las funcionalidades administrativas debe requerir
+autenticación   mediante credenciales.
+
+--
+
+RNF-003
+
+--
+
+Integridad
+
+--
+
+El   sistema debe mantener la consistencia de la información de
+usuarios, eventos,   lugares e inscripciones.
+
+--
+
+RNF-004
+
+--
+
+Rendimiento
+
+--
+
+El   sistema debe responder a las consultas y operaciones realizadas por
+los   usuarios en un tiempo adecuado para su uso normal.
+
+--
+
+RNF-005
+
+--
+
+Disponibilidad
+
+--
+
+El   sistema debe permitir el acceso a sus funcionalidades mientras se
+encuentre   en funcionamiento.
+
+--
+
+RNF-006
+
+--
+
+Mantenibilidad
+
+--
+
+El   código del sistema debe estar organizado en clases y componentes
+que   faciliten su mantenimiento y modificación.
+
+--
+
+RNF-007
+
+--
+
+Compatibilidad
+
+--
+
+El   sistema debe poder ejecutarse correctamente en el entorno definido
+para el   proyecto.
+
+--
+
+RNF-008
+
+--
+
+Validación   de datos
+
+--
+
+El   sistema debe validar la información obligatoria antes de registrar
+usuarios,   lugares, eventos o inscripciones.
+
+--
+
+RNF-009
+
+--
+
+Confiabilidad
+
+--
+
+El   sistema debe evitar registros duplicados y operaciones que generen
+inconsistencias en la información.
+
+--
+
+RNF-010
+
+--
+
+Auditabilidad
+
+--
+
+El   sistema debe conservar la información necesaria para identificar
+los eventos   y las inscripciones realizadas.
+
+3. Reglas de negocio
+
+Las reglas de negocio representan restricciones y condiciones
+obligatorias del dominio del Sistema de Gestión de Eventos.
+
+--
+
+Código
+
+--
+
+Regla de negocio
+
+--
+
+RN-001
+
+--
+
+Un   usuario debe contar con credenciales válidas para acceder a las
+funciones que   requieren autenticación.
+
+--
+
+RN-002
+
+--
+
+No   se deben registrar usuarios duplicados con la misma identificación.
+
+--
+
+RN-003
+
+--
+
+No   se deben registrar organizadores duplicados.
+
+--
+
+RN-004
+
+--
+
+Un   lugar debe estar registrado antes de poder ser asignado a un
+evento.
+
+--
+
+RN-005
+
+--
+
+Todo   evento debe tener como mínimo un nombre, fecha, hora, lugar y
+capacidad   definidos.
+
+--
+
+RN-006
+
+--
+
+La   capacidad máxima de un evento debe ser mayor que cero.
+
+--
+
+RN-007
+
+--
+
+Un   evento no puede superar la capacidad máxima establecida.
+
+--
+
+RN-008
+
+--
+
+Un   asistente no puede registrarse más de una vez en el mismo evento.
+
+--
+
+RN-009
+
+--
+
+Un   asistente solo puede inscribirse en un evento que tenga cupos
+disponibles.
+
+--
+
+RN-010
+
+--
+
+Un   mismo lugar no puede tener dos eventos programados para la misma
+fecha y   hora.
+
+--
+
+RN-011
+
+--
+
+Un   evento cancelado no debe permitir nuevas inscripciones.
+
+--
+
+RN-012
+
+--
+
+Cuando   un asistente cancele su inscripción, el cupo debe quedar
+nuevamente   disponible.
+
+--
+
+RN-013
+
+--
+
+La   cantidad de inscritos debe actualizarse después de registrar o
+cancelar una   inscripción.
+
+--
+
+RN-014
+
+--
+
+La   lista de participantes debe corresponder únicamente al evento
+seleccionado.
+
+--
+
+RN-015
+
+--
+
+La   confirmación de inscripción solo debe generarse cuando el registro
+se haya   realizado correctamente.
+
+4. Restricciones
+
+Las restricciones establecen condiciones o limitaciones que deben
+tenerse en cuenta durante el desarrollo del proyecto.
+
+--
+
+Código
+
+--
+
+Restricción
+
+--
+
+RST-001
+
+--
+
+El   proyecto debe desarrollarse utilizando el lenguaje de programación
+Java.
+
+--
+
+RST-002
+
+--
+
+El   desarrollo debe realizarse en Apache NetBeans como entorno de
+desarrollo   principal.
+
+--
+
+RST-003
+
+--
+
+El   sistema debe aplicar los principios de Programación Orientada a
+Objetos.
+
+--
+
+RST-004
+
+--
+
+La   solución debe implementar clases que representen las principales
+entidades   del dominio, como Usuario, Organizador, Asistente, Evento,
+Lugar e   Inscripción.
+
+--
+
+RST-005
+
+--
+
+El   sistema debe ejecutarse inicialmente como una aplicación de
+consola, de   acuerdo con el alcance académico actual del proyecto.
+
+--
+
+RST-006
+
+--
+
+La   información debe validarse antes de ser almacenada en las
+estructuras   utilizadas por el sistema.
+
+--
+
+RST-007
+
+--
+
+El   desarrollo debe mantenerse en el repositorio del proyecto para
+facilitar el   control de versiones y la entrega del código fuente.
+
+--
+
+RST-008
+
+--
+
+Las   funcionalidades implementadas deben corresponder con las historias
+de usuario   y requerimientos definidos para el MVP.
+
+5. Criterios de aceptación
+
+Los criterios de aceptación permiten verificar que cada historia de
+usuario y requerimiento funcional se haya implementado correctamente.
+
+CA-001 -- Inicio de sesión
+
+Relacionado con: HU-001 / RF-001
+
+Dado que el administrador tiene credenciales registradas,
+
+cuando ingrese correctamente sus credenciales,
+
+entonces el sistema debe permitir el acceso.
+
+Dado que las credenciales son incorrectas,
+
+cuando intente iniciar sesión,
+
+entonces el sistema debe rechazar el acceso e informar el error.
+
+CA-002 -- Registro de usuarios
+
+Relacionado con: HU-002 / RF-002
+
+Dado que el administrador ingresa la información obligatoria,
+
+cuando registre un nuevo usuario,
+
+entonces el sistema debe almacenar la información.
+
+Dado que ya existe un usuario con la misma identificación,
+
+cuando se intente registrar nuevamente,
+
+entonces el sistema debe impedir el registro duplicado.
+
+CA-003 -- Registro de organizadores
+
+Relacionado con: HU-003 / RF-003
+
+Dado que el administrador proporciona la información requerida,
+
+cuando registre un organizador,
+
+entonces el sistema debe crear el registro correspondiente.
+
+Dado que el organizador ya existe,
+
+cuando se intente registrarlo nuevamente,
+
+entonces el sistema debe rechazar el registro duplicado.
+
+CA-004 -- Registro de lugares
+
+Relacionado con: HU-004 / RF-004
+
+Dado que el administrador proporciona los datos requeridos,
+
+cuando registre un lugar,
+
+entonces el sistema debe almacenar la información del lugar.
+
+Dado que faltan datos obligatorios,
+
+cuando intente registrar el lugar,
+
+entonces el sistema debe informar la información faltante.
+
+CA-005 -- Consulta de eventos
+
+Relacionado con: HU-005 / RF-005
+
+Dado que existen eventos registrados,
+
+cuando el administrador consulte los eventos,
+
+entonces el sistema debe mostrar los eventos registrados.
+
+Dado que no existen eventos,
+
+cuando realice la consulta,
+
+entonces el sistema debe informar que no hay eventos disponibles.
+
+CA-006 -- Generación de reportes
+
+Relacionado con: HU-006 / RF-006
+
+Dado que existen datos registrados,
+
+cuando el administrador solicite un reporte,
+
+entonces el sistema debe presentar la información de eventos y
+participantes.
+
+CA-007 -- Búsqueda de eventos
+
+Relacionado con: HU-007 / RF-007
+
+Dado que existen eventos registrados,
+
+cuando el administrador busque por nombre o fecha,
+
+entonces el sistema debe mostrar los eventos coincidentes.
+
+Dado que no existan coincidencias,
+
+cuando se realice la búsqueda,
+
+entonces el sistema debe informar que no se encontraron resultados.
+
+CA-008 -- Gestión de inscripciones
+
+Relacionado con: HU-008 / RF-008
+
+Dado que existe un participante inscrito,
+
+cuando el administrador elimine su inscripción,
+
+entonces el sistema debe retirar al participante del evento y
+actualizar los cupos.
+
+CA-009 -- Creación de eventos
+
+Relacionado con: HU-009 / RF-009
+
+Dado que el organizador proporciona todos los datos obligatorios,
+
+cuando cree un evento,
+
+entonces el sistema debe registrar el evento.
+
+Dado que la capacidad es menor o igual a cero,
+
+cuando intente crear el evento,
+
+entonces el sistema debe rechazar el registro.
+
+Dado que el lugar ya tiene un evento programado en la misma fecha y
+hora,
+
+cuando intente crear otro evento,
+
+entonces el sistema debe impedir el registro.
+
+CA-010 -- Modificación de eventos
+
+Relacionado con: HU-010 / RF-010
+
+Dado que el evento existe,
+
+cuando el organizador modifique su información,
+
+entonces el sistema debe actualizar los datos.
+
+CA-011 -- Cancelación de eventos
+
+Relacionado con: HU-011 / RF-011
+
+Dado que el evento existe,
+
+cuando el organizador lo cancele,
+
+entonces el sistema debe marcarlo como cancelado y evitar nuevas
+inscripciones.
+
+CA-012 -- Asignación de lugares
+
+Relacionado con: HU-012 / RF-012
+
+Dado que el lugar está disponible,
+
+cuando el organizador lo asigne a un evento,
+
+entonces el sistema debe realizar la asignación.
+
+Dado que existe otro evento en el mismo lugar, fecha y hora,
+
+cuando intente realizar la asignación,
+
+entonces el sistema debe rechazar la operación.
+
+CA-013 -- Consulta de participantes
+
+Relacionado con: HU-013 / RF-013
+
+Dado que existen participantes inscritos,
+
+cuando el organizador consulte un evento,
+
+entonces el sistema debe mostrar la lista correspondiente.
+
+CA-014 -- Consulta de cantidad de inscritos
+
+Relacionado con: HU-014 / RF-014
+
+Dado que existen participantes inscritos,
+
+cuando el organizador consulte la ocupación,
+
+entonces el sistema debe mostrar la cantidad actual de inscritos.
+
+CA-015 -- Inscripción a eventos
+
+Relacionado con: HU-015 / RF-015
+
+Dado que el evento tiene cupos disponibles,
+
+cuando el asistente solicite su inscripción,
+
+entonces el sistema debe registrar al asistente.
+
+Dado que el evento alcanzó su capacidad máxima,
+
+cuando el asistente intente registrarse,
+
+entonces el sistema debe rechazar la inscripción.
+
+Dado que el asistente ya está inscrito,
+
+cuando intente registrarse nuevamente,
+
+entonces el sistema debe impedir el registro duplicado.
+
+CA-016 -- Cancelación de inscripción
+
+Relacionado con: HU-016 / RF-016
+
+Dado que el asistente tiene una inscripción activa,
+
+cuando solicite cancelarla,
+
+entonces el sistema debe eliminar la inscripción y liberar el cupo.
+
+CA-017 -- Consulta de eventos disponibles
+
+Relacionado con: HU-017 / RF-017
+
+Dado que existen eventos disponibles,
+
+cuando el asistente consulte los eventos,
+
+entonces el sistema debe mostrar únicamente los eventos disponibles.
+
+CA-018 -- Confirmación de inscripción
+
+Relacionado con: HU-020 / RF-018
+
+Dado que la inscripción fue realizada correctamente,
+
+cuando finalice el proceso de registro,
+
+entonces el sistema debe mostrar una confirmación de inscripción.
+
+6. Matriz de trazabilidad
+
+La siguiente matriz permite relacionar las historias de usuario con los
+requerimientos funcionales, criterios de aceptación y prioridad dentro
+del proyecto.
+
+--
+
+Historia   de usuario
+
+--
+
+Requerimiento   funcional
+
+--
+
+Regla de   negocio relacionada
+
+--
+
+Criterio   de aceptación
+
+--
+
+Prioridad
+
+--
+
+MVP
+
+--
+
+HU-001
+
+--
+
+RF-001
+
+--
+
+RN-001
+
+--
+
+CA-001
+
+--
+
+Alta
+
+--
+
+Sí
+
+--
+
+HU-002
+
+--
+
+RF-002
+
+--
+
+RN-002
+
+--
+
+CA-002
+
+--
+
+Alta
+
+--
+
+Sí
+
+--
+
+HU-003
+
+--
+
+RF-003
+
+--
+
+RN-003
+
+--
+
+CA-003
+
+--
+
+Alta
+
+--
+
+Sí
+
+--
+
+HU-004
+
+--
+
+RF-004
+
+--
+
+RN-004
+
+--
+
+CA-004
+
+--
+
+Alta
+
+--
+
+Sí
+
+--
+
+HU-005
+
+--
+
+RF-005
+
+--
+
+--
+
+CA-005
+
+--
+
+Media
+
+--
+
+Sí
+
+--
+
+HU-006
+
+--
+
+RF-006
+
+--
+
+--
+
+CA-006
+
+--
+
+Media
+
+--
+
+No
+
+--
+
+HU-007
+
+--
+
+RF-007
+
+--
+
+--
+
+CA-007
+
+--
+
+Media
+
+--
+
+Sí
+
+--
+
+HU-008
+
+--
+
+RF-008
+
+--
+
+RN-012,   RN-013
+
+--
+
+CA-008
+
+--
+
+Media
+
+--
+
+No
+
+--
+
+HU-009
+
+--
+
+RF-009
+
+--
+
+RN-005,   RN-006, RN-010
+
+--
+
+CA-009
+
+--
+
+Crítica
+
+--
+
+Sí
+
+--
+
+HU-010
+
+--
+
+RF-010
+
+--
+
+RN-005,   RN-010
+
+--
+
+CA-010
+
+--
+
+Alta
+
+--
+
+Sí
+
+--
+
+HU-011
+
+--
+
+RF-011
+
+--
+
+RN-011
+
+--
+
+CA-011
+
+--
+
+Alta
+
+--
+
+Sí
+
+--
+
+HU-012
+
+--
+
+RF-012
+
+--
+
+RN-004,   RN-010
+
+--
+
+CA-012
+
+--
+
+Alta
+
+--
+
+Sí
+
+--
+
+HU-013
+
+--
+
+RF-013
+
+--
+
+RN-014
+
+--
+
+CA-013
+
+--
+
+Media
+
+--
+
+No
+
+--
+
+HU-014
+
+--
+
+RF-014
+
+--
+
+RN-007,   RN-013
+
+--
+
+CA-014
+
+--
+
+Media
+
+--
+
+Sí
+
+--
+
+HU-015
+
+--
+
+RF-015
+
+--
+
+RN-007,   RN-008, RN-009
+
+--
+
+CA-015
+
+--
+
+Crítica
+
+--
+
+Sí
+
+--
+
+HU-016
+
+--
+
+RF-016
+
+--
+
+RN-012,   RN-013
+
+--
+
+CA-016
+
+--
+
+Alta
+
+--
+
+Sí
+
+--
+
+HU-017
+
+--
+
+RF-017
+
+--
+
+RN-011
+
+--
+
+CA-017
+
+--
+
+Alta
+
+--
+
+Sí
+
+--
+
+HU-020
+
+--
+
+RF-018
+
+--
+
+RN-015
+
+--
+
+CA-018
+
+--
+
+Media
+
+--
+
+Sí
+
+7. Resumen de trazabilidad
+
+El proceso de trazabilidad del proyecto GestEvent se establece de la
+siguiente manera:
+
+Épica → Historia de Usuario → Requerimiento Funcional → Regla de
+Negocio → Criterio de Aceptación → Desarrollo → Prueba
+
+Esto permite comprobar que cada funcionalidad desarrollada tenga un
+origen en una necesidad del usuario y pueda ser validada mediante
+criterios de aceptación.
+
+Por ejemplo:
+
+Épica: Gestión de inscripciones
+
+↓
+
+HU-015: Registrarse en un evento
+
+↓
+
+RF-015: El sistema debe permitir al asistente registrarse en un evento
+cuando existan cupos disponibles
+
+↓
+
+RN-007: El evento no puede superar su capacidad máxima
+
+↓
+
+RN-008: Un asistente no puede registrarse más de una vez en el mismo
+evento
+
+↓
+
+CA-015: Se valida que exista cupo y que el asistente no tenga una
+inscripción previa.
+
+8. Relación entre las fases
+
+La Fase 1 y la Fase 2 se encuentran directamente relacionadas:
+
+--
+
+Fase 1
+
+--
+
+Fase 2
+
+--
+
+Problema   identificado
+
+--
+
+Necesidades   que debe resolver el sistema
+
+--
+
+Objetivo   general
+
+--
+
+Alcance de   los requerimientos
+
+--
+
+Épicas
+
+--
+
+Agrupación   funcional
+
+--
+
+Historias de   usuario
+
+--
+
+Origen de los   requerimientos funcionales
+
+--
+
+Criterios de   aceptación
+
+--
+
+Condiciones   verificables de cada requerimiento
+
+--
+
+Priorización
+
+--
+
+Determinación   del MVP
+
+--
+
+MVP
+
+--
+
+Requerimientos   prioritarios para la primera versión
+
+De esta forma, las historias de usuario no quedan aisladas. Cada una se
+puede rastrear hasta uno o varios requerimientos y posteriormente hasta
+sus criterios de aceptación y pruebas. 
